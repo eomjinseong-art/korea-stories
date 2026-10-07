@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-noto-sans), "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-serif: var(--font-noto-serif), "Source Han Serif K", "Noto Serif KR", serif;
+  --color-bg: #f3eee6;
+  --color-ink: #241c16;
+  --color-card: #fbf7f2;
+  --color-stone: #e9e1d4;
+  --color-line: #e4d9cb;
+  --color-muted: #6e6258;
+  --color-terra: #a34732;
+  --color-terra-deep: #7d3324;
+  --color-laurel: #2f4a3c;
+  --color-sea: #d5e4ea;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid #a34732;
+  outline-offset: 2px;
+}
+
+.dentil {
+  height: 8px;
+  border-top: 2px solid #a347328c;
+  border-bottom: 2px solid #a347328c;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #0000 0 8px,
+    #a3473273 8px 12px,
+    #0000 12px 16px
+  );
+}
+
+.region-shape {
+  stroke: #3f3228;
+  stroke-width: 1.35;
+  stroke-linejoin: round;
+  transition: fill 0.15s ease, stroke 0.15s ease, stroke-width 0.15s ease;
+}
+
+a.region:hover .region-shape,
+a.region:focus-visible .region-shape {
+  stroke: #a34732;
+  stroke-width: 2.6;
+}
+
+.fill-gyeonggi { fill: #e4c4a0; }
+.fill-gangwon { fill: #c9d3b8; }
+.fill-chungcheong { fill: #ead6b5; }
+.fill-jeolla { fill: #e5cfc4; }
+.fill-gyeongsang { fill: #e3d2ae; }
+.fill-jeju { fill: #c5d5c6; }
+
+a.region:hover .fill-gyeonggi,
+a.region:focus-visible .fill-gyeonggi { fill: #f3ddc4; }
+a.region:hover .fill-gangwon,
+a.region:focus-visible .fill-gangwon { fill: #dce6cf; }
+a.region:hover .fill-chungcheong,
+a.region:focus-visible .fill-chungcheong { fill: #f6e6cc; }
+a.region:hover .fill-jeolla,
+a.region:focus-visible .fill-jeolla { fill: #f3e0d8; }
+a.region:hover .fill-gyeongsang,
+a.region:focus-visible .fill-gyeongsang { fill: #f1e4c8; }
+a.region:hover .fill-jeju,
+a.region:focus-visible .fill-jeju { fill: #d9e7da; }
+
+.map-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  fill: #241c16;
+  paint-order: stroke;
+  stroke: #fbf7f2;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .region-shape { transition: none; }
+}
