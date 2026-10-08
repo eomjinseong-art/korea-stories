@@ -1,4 +1,4 @@
-import { nav, sisters, COUPANG_LINE, COUPANG_URL, footerNote, SITE_NAME, TAGLINE } from "@/lib/site";
+import { nav, sisters, COUPANG_LINE, COUPANG_URL, externalAnchor, footerNote, SITE_NAME, TAGLINE } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -50,13 +50,14 @@ export function Footer() {
           </p>
           <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-xs">
             {sisters.map((site) => (
-              <li key={site.href}>
+              <li key={site.href} className="max-w-full">
                 <a
                   href={site.href}
                   className="underline decoration-line underline-offset-4 hover:text-terra"
-                  rel="noopener noreferrer"
+                  {...externalAnchor(site.href)}
                 >
-                  {site.label}
+                  {site.label}{" "}
+                  <span className="text-[10px] tracking-wide text-terra">{site.english}</span>
                 </a>
               </li>
             ))}

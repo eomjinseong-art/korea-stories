@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
+import { CrossSiteSection } from "@/components/CrossSiteSection";
+import { Elsewhere } from "@/components/Elsewhere";
 import { FamilyTreeView } from "@/components/FamilyTreeView";
 import { CAVEATS, DYNASTIES, relationsOf, type Dynasty, type RelationPerson } from "@/data/family-tree";
 import { rulerBySlug } from "@/data/rulers";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { otherFamilyTrees, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const description =
   "고조선·고구려·백제·신라·고려·조선의 가족관계도. 금색 선은 부모와 자식, 붉은 선은 부부, 보라 점선은 전승·이설·양자입니다. 조선 27왕의 실제 아버지를 구분합니다.";
@@ -108,6 +110,13 @@ export default function FamilyTreePage() {
           </a>
         </p>
       </section>
+
+      <CrossSiteSection
+        id="other-family-trees-heading"
+        title="다른 가족관계도"
+        english="Other family trees"
+        links={otherFamilyTrees}
+      />
     </div>
   );
 }
@@ -165,6 +174,7 @@ function DynastyProse({ dynasty }: { dynasty: Dynasty }) {
                   ) : null}
                   <span className="mt-0.5 block text-ink">{node.summary}</span>
                   {node.note ? <span className="mt-0.5 block text-xs leading-5 text-terra">점선: {node.note}</span> : null}
+                  <Elsewhere links={node.also} />
                   <span className="mt-1 block text-xs leading-5 text-muted">
                     <Kin dynastyId={dynasty.id} label="부모" people={rel.parents} />
                     <Kin dynastyId={dynasty.id} label="전승·이설" people={rel.variantParents} />

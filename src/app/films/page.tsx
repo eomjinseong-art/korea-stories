@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
+import { CrossSiteSection } from "@/components/CrossSiteSection";
 import { FilmCards } from "@/components/FilmCards";
 import { films } from "@/data/films";
+import { otherFilms } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "관련 영화",
@@ -21,6 +23,7 @@ export default function FilmsPage() {
         보면 좋은지, 어디가 창작인지 두 단락으로 나눕니다. 스트리밍 링크는 없습니다.
       </p>
       <FilmCards slugs={films.map((film) => film.slug)} heading="작품" />
+      <CrossSiteSection id="other-films-heading" title="다른 사이트의 영화" english="Films on sister sites" links={otherFilms} />
     </div>
   );
 }

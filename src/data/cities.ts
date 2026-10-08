@@ -120,6 +120,7 @@ export const cities: City[] = [
       "오늘의 수원 갈비는 20세기의 음식 문화입니다. 화성 축성과 같은 문단에 넣지 않습니다.",
     ],
     filmSlugs: ["the-throne"],
+    links: [{ href: "https://philosophy-stories.vercel.app/people/dasan", label: "다산 정약용 · 철학이야기" }],
   },
   {
     slug: "gangneung",
@@ -158,6 +159,7 @@ export const cities: City[] = [
       "오죽헌의 대나무와 율곡 이야기는 조선 중기의 층입니다. 신라 명주의 주치(州治)와 같은 풍경으로 겹치지 않습니다.",
     ],
     filmSlugs: [],
+    links: [{ href: "https://philosophy-stories.vercel.app/people/yulgok", label: "율곡 이이 · 철학이야기" }],
   },
   {
     slug: "gongju",
@@ -311,6 +313,7 @@ export const cities: City[] = [
       "첨성대는 선덕여왕 때 세웠다고 오래 전해집니다. 돌에 ‘선덕이 세웠다’는 문장이 새겨진 것은 아닙니다. 별을 보던 대인지, 다른 상징물인지도 연구가 갈립니다. 선덕 글에서 전설과 유적을 나눕니다.",
     ],
     filmSlugs: [],
+    links: [{ href: "https://philosophy-stories.vercel.app/people/wonhyo", label: "원효 · 철학이야기" }],
   },
   {
     slug: "gimhae",

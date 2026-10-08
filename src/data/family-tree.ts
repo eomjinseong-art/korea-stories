@@ -18,6 +18,8 @@
  * 4. /rulers/[slug] 가 있을 때만 slug 를 넣습니다.
  */
 
+import type { LinkItem } from "./types";
+
 export type DynastyId = "gojoseon" | "goguryeo" | "baekje" | "silla" | "goryeo" | "joseon";
 
 export type LinkKind = "parent" | "spouse" | "variant-parent" | "adoptive" | "gap";
@@ -36,6 +38,7 @@ export type TreeSeed = {
   badge?: "전승" | "이설";
   marker?: "gap";
   aliases?: string[];
+  also?: LinkItem[];
 };
 
 export type TreeLink = { from: string; to: string; kind: LinkKind };
@@ -381,7 +384,7 @@ function gojoseon(): Dynasty {
       { id: "gj-hwanin", ko: "환인", english: "Hwanin", ...at(0, 0), dates: "전승 · 하늘", badge: "전승", summary: "단군 신화에서 환웅의 아버지로 나오는 하늘 신입니다.", aliases: ["환인", "Hwanin"] },
       { id: "gj-hwanung", ko: "환웅", english: "Hwanung", ...at(1, 0), dates: "전승", badge: "전승", summary: "환인의 아들로 땅에 내려왔다는 신화의 인물입니다. 웅녀와 단군을 두었다고 전합니다.", aliases: ["환웅", "Hwanung"] },
       { id: "gj-ungnyeo", ko: "웅녀", english: "Ungnyeo", ...at(1, 1.2), dates: "전승 · 곰", badge: "전승", summary: "곰이 사람이 되어 환웅과 단군을 낳았다는 신화입니다.", aliases: ["웅녀", "Ungnyeo"] },
-      { id: "gj-dangun", ko: "단군", english: "Dangun", ...at(2, 0), dates: "전승 · 시조", badge: "전승", summary: "고조선을 열었다고 삼국유사가 전하는 이름입니다. 기원전 2333년 즉위설은 신화의 연대입니다.", note: "아버지 환웅, 어머니 웅녀는 신화입니다. 위만조선과 혈연으로 잇지 않습니다.", aliases: ["단군왕검", "Dangun", "Tangun"] },
+      { id: "gj-dangun", ko: "단군", english: "Dangun", ...at(2, 0), dates: "전승 · 시조", badge: "전승", summary: "고조선을 열었다고 삼국유사가 전하는 이름입니다. 기원전 2333년 즉위설은 신화의 연대입니다.", note: "아버지 환웅, 어머니 웅녀는 신화입니다. 위만조선과 혈연으로 잇지 않습니다.", aliases: ["단군왕검", "Dangun", "Tangun"], also: [{ href: "https://nadoo-timeline.vercel.app/events/dangun-gojoseon", label: "단군과 고조선 · 나두연표" }] },
       { id: "gj-gap", ko: "…", english: "Gap", ...at(3, 3.6), marker: "gap", dates: "혈통 없음", summary: "단군 전승과 위만조선 사이를 부모 자식으로 잇는 기록이 없습니다. 이 점선은 생략 표시입니다." },
       { id: "gj-jun", ko: "준왕", english: "King Jun", ...at(4, 4.8), dates: "위만에게 쫓김", summary: "위만이 왕위를 빼앗기 전 고조선의 왕으로 사기에 나옵니다. 단군이나 위만의 아버지는 아닙니다.", aliases: ["준왕", "King Jun"] },
       { id: "gj-wiman", ko: "위만", english: "Wiman", ...at(4, 7.2), dates: "기원전 194년경", summary: "연나라에서 들어와 준왕을 몰아내고 왕이 됩니다. 사기는 아들에게 왕위를 물려 손자 우거까지 이어진다고 적습니다.", aliases: ["위만", "Wiman", "Wei Man"] },
@@ -435,7 +438,7 @@ function goguryeo(): Dynasty {
     [
       { id: "gg-haemosu", ko: "해모수", english: "Haemosu", ...at(0, 0), dates: "전승", badge: "전승", summary: "주몽의 아버지로 전하는 하늘 신의 이름입니다.", aliases: ["해모수", "Haemosu"] },
       { id: "gg-yuhwa", ko: "유화", english: "Yuhwa", ...at(0, 1.2), dates: "전승 · 어머니", badge: "전승", summary: "주몽의 어머니로 전하는 이름입니다.", aliases: ["유화", "Yuhwa", "柳花"] },
-      { id: "gg-jumong", ko: "주몽", english: "Jumong", ...at(1, 0), dates: "전승 · 기원전 37–19", badge: "전승", summary: "고구려를 연 동명성왕으로 삼국사기가 적습니다. 출생 신화는 점선입니다.", note: "소서노에게서 난 비류·온조는 백제 가계도에 있습니다. 유리왕의 어머니는 예씨입니다.", aliases: ["동명성왕", "동명왕", "추모", "Jumong", "Dongmyeong"] },
+      { id: "gg-jumong", ko: "주몽", english: "Jumong", ...at(1, 0), dates: "전승 · 기원전 37–19", badge: "전승", summary: "고구려를 연 동명성왕으로 삼국사기가 적습니다. 출생 신화는 점선입니다.", note: "소서노에게서 난 비류·온조는 백제 가계도에 있습니다. 유리왕의 어머니는 예씨입니다.", aliases: ["동명성왕", "동명왕", "추모", "Jumong", "Dongmyeong"], also: [{ href: "https://nadoo-timeline.vercel.app/events/founding-goguryeo", label: "고구려의 건국 · 나두연표" }] },
       { id: "gg-soseono", ko: "소서노", english: "Soseono", ...at(1, 1.2), dates: "전승 · 왕비", badge: "전승", summary: "주몽의 왕비로 전합니다. 비류와 온조의 어머니라는 이야기는 백제 쪽에 점선으로 있습니다.", aliases: ["소서노", "Soseono"] },
       { id: "gg-ye", ko: "예씨", english: "Lady Ye", ...at(1, 2.4), dates: "전승 · 유리의 어머니", badge: "전승", summary: "주몽의 왕비이고 유리왕의 어머니로 삼국사기가 적습니다. 소서노와는 다른 사람입니다.", aliases: ["예씨부인", "Lady Ye"] },
       { id: "gg-yuri", ko: "유리왕", english: "King Yuri", ...at(2, 2.4), dates: "전승 · 기원전 19–18", badge: "전승", summary: "주몽과 예씨의 아들로 삼국사기가 적는 제2대입니다. 초기 왕계라 점선으로 두었습니다.", aliases: ["유리명왕", "Yuri"] },
