@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Crumb } from "@/components/Crumb";
 import { FilmCards } from "@/components/FilmCards";
+import { familyTreeHref } from "@/data/family-tree";
 import { rulerBySlug, rulers } from "@/data/rulers";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -26,6 +27,7 @@ export default async function RulerPage({ params }: Props) {
   const { slug } = await params;
   const ruler = rulerBySlug(slug);
   if (!ruler) notFound();
+  const treeHref = familyTreeHref(ruler.slug);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
@@ -53,8 +55,16 @@ export default async function RulerPage({ params }: Props) {
           </p>
         ))}
       </div>
-      {ruler.links.length > 0 ? (
+      {ruler.links.length > 0 || treeHref ? (
         <p className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+          {treeHref ? (
+            <a
+              href={treeHref}
+              className="text-laurel underline decoration-line underline-offset-4 hover:text-terra"
+            >
+              가족관계도에서 보기
+            </a>
+          ) : null}
           {ruler.links.map((link) => (
             <a
               key={link.href}
