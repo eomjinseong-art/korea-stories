@@ -65,6 +65,7 @@ export type City = {
   events: { title: string; text: string }[];
   culture: string[];
   filmSlugs: string[];
+  links?: LinkItem[];
 };
 
 export type Ruler = {
@@ -89,4 +90,5 @@ export type Era = {
   years: string;
   summary: string;
   body: string[];
+  links?: LinkItem[];
 };

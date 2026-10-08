@@ -4,6 +4,7 @@ import { Crumb } from "@/components/Crumb";
 import { FilmCards } from "@/components/FilmCards";
 import { familyTreeHref } from "@/data/family-tree";
 import { rulerBySlug, rulers } from "@/data/rulers";
+import { externalAnchor } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -70,6 +71,7 @@ export default async function RulerPage({ params }: Props) {
               key={link.href}
               href={link.href}
               className="text-laurel underline decoration-line underline-offset-4 hover:text-terra"
+              {...externalAnchor(link.href)}
             >
               {link.label}
             </a>

@@ -54,6 +54,7 @@ export const rulers: Ruler[] = [
     links: [
       { href: "/regions/gyeonggi/hanyang", label: "한양 · 한성" },
       { href: "/eras#three-kingdoms", label: "삼국과 가야" },
+      { href: "https://nadoo-timeline.vercel.app/events/geunchogo-expansion", label: "근초고왕의 영토 확장 · 나두연표" },
     ],
   },
   {
@@ -99,6 +100,7 @@ export const rulers: Ruler[] = [
       { href: "/regions/chungcheong/buyeo", label: "부여" },
       { href: "/regions/chungcheong", label: "충청도 · 황산벌" },
       { href: "/rulers/munmu", label: "문무왕" },
+      { href: "https://nadoo-timeline.vercel.app/events/fall-of-baekje", label: "백제의 멸망 · 나두연표" },
     ],
   },
   {
@@ -122,6 +124,7 @@ export const rulers: Ruler[] = [
       { href: "/regions/gyeongsang/gyeongju", label: "경주" },
       { href: "/regions/gyeongsang/gimhae", label: "김해 · 가야" },
       { href: "/regions/gyeonggi/hanyang", label: "한강 · 한성" },
+      { href: "https://nadoo-timeline.vercel.app/events/silla-han-river", label: "신라가 한강을 차지한 일 · 나두연표" },
     ],
   },
   {
@@ -141,7 +144,10 @@ export const rulers: Ruler[] = [
       "첨성대는 선덕왕 때 세웠다고 오래 전해집니다. 경주에 탑이 서 있는 것은 사실이고, 건립 명문이 남아 있는 것은 아닙니다. 별을 관측하던 시설인지에 대해서도 설명이 갈립니다. 황룡사 구층목탑을 자장 법사의 건의로 세웠다는 이야기도 불교 설화의 층이 있습니다. 터와 유물은 남았으나 목탑 자체는 나중에 불탔습니다.",
     ],
     filmSlugs: [],
-    links: [{ href: "/regions/gyeongsang/gyeongju", label: "경주" }],
+    links: [
+      { href: "/regions/gyeongsang/gyeongju", label: "경주" },
+      { href: "https://philosophy-stories.vercel.app/people/wonhyo", label: "원효 · 철학이야기" },
+    ],
   },
   {
     slug: "munmu",
@@ -164,6 +170,8 @@ export const rulers: Ruler[] = [
       { href: "/regions/gyeongsang/gyeongju", label: "경주" },
       { href: "/rulers/uija", label: "의자왕" },
       { href: "/eras#unified-silla", label: "통일신라" },
+      { href: "https://nadoo-timeline.vercel.app/events/silla-unification", label: "신라의 삼국 통일 · 나두연표" },
+      { href: "https://philosophy-stories.vercel.app/people/uisang", label: "의상 · 철학이야기" },
     ],
   },
   {
@@ -209,6 +217,7 @@ export const rulers: Ruler[] = [
       { href: "/regions/jeolla/jeonju", label: "전주 · 후백제" },
       { href: "/regions/gyeongsang/gyeongju", label: "경주" },
       { href: "/eras#goryeo", label: "고려" },
+      { href: "https://nadoo-timeline.vercel.app/events/founding-goryeo", label: "고려의 건국 · 나두연표" },
     ],
   },
   {
@@ -273,6 +282,7 @@ export const rulers: Ruler[] = [
       { href: "/regions/gyeonggi/hanyang", label: "한양" },
       { href: "/regions/jeolla/jeonju", label: "전주" },
       { href: "/rulers/sejong", label: "세종" },
+      { href: "https://nadoo-timeline.vercel.app/events/founding-joseon", label: "조선의 건국 · 나두연표" },
     ],
   },
   {
@@ -295,6 +305,7 @@ export const rulers: Ruler[] = [
     links: [
       { href: "/regions/gyeonggi/hanyang", label: "한양" },
       { href: "/regions/chungcheong", label: "세종시라는 이름" },
+      { href: "https://nadoo-timeline.vercel.app/events/hunminjeongeum-promulgated", label: "훈민정음 반포 · 나두연표" },
     ],
   },
   {
@@ -406,6 +417,7 @@ export const rulers: Ruler[] = [
       { href: "/rulers/sado", label: "사도세자" },
       { href: "/rulers/yeongjo", label: "영조" },
       { href: "/regions/gyeonggi/suwon", label: "수원" },
+      { href: "https://philosophy-stories.vercel.app/people/dasan", label: "다산 정약용 · 철학이야기" },
     ],
   },
   {

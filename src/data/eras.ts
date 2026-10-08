@@ -53,5 +53,9 @@ export const eras: Era[] = [
       "세종 때 훈민정음이 나옵니다. 그때의 이름은 한글이 아니라 훈민정음입니다. 임진왜란(1592)과 병자호란(1636)은 한양과 경상·전라·경기의 산성을 같이 흔듭니다. 영조와 정조 사이에는 사도세자의 죽음과 수원 화성이 있습니다.",
       "1897년 대한제국을 선포한 뒤의 개항, 식민, 분단은 이 1편의 범위를 넘습니다. 고을 이름이 바뀐 대목 — 한성이 서울이 된 일, 대전·세종처럼 커진 도시 — 만 해당 고을에서 짧게 적습니다. 없는 현대사를 채우지 않습니다.",
     ],
+    links: [
+      { href: "https://philosophy-stories.vercel.app/people/toegye", label: "퇴계 이황 · 철학이야기" },
+      { href: "https://philosophy-stories.vercel.app/people/yulgok", label: "율곡 이이 · 철학이야기" },
+    ],
   },
 ];

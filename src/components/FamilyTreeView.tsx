@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
+import { Elsewhere } from "@/components/Elsewhere";
 import {
   CAVEATS,
   DYNASTIES,
@@ -363,6 +364,7 @@ export function FamilyTreeView() {
               <PeopleRow label="형제·자매" people={relations.siblings} onPick={(id) => choose(dynasty.id, id)} />
             </div>
           ) : null}
+          <Elsewhere links={selectedNode.also} />
           <div className="mt-3 flex flex-wrap gap-2">
             {selectedNode.href ? (
               <a href={selectedNode.href} className="rounded-full bg-terra px-3 py-1.5 text-sm text-white hover:bg-terra-deep">

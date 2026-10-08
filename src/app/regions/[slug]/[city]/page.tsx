@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Crumb } from "@/components/Crumb";
+import { Elsewhere } from "@/components/Elsewhere";
 import { Etymology } from "@/components/Etymology";
 import { FilmCards } from "@/components/FilmCards";
 import { cities } from "@/data/cities";
@@ -107,6 +108,8 @@ export default async function CityPage({ params }: Props) {
           {region.name} 전체 보기
         </a>
       </p>
+
+      <Elsewhere links={city.links} />
 
       <FilmCards slugs={city.filmSlugs} />
     </article>

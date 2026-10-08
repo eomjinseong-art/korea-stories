@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
+import { Elsewhere } from "@/components/Elsewhere";
 import { eras } from "@/data/eras";
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function ErasPage() {
                 </p>
               ))}
             </div>
+            <Elsewhere links={era.links} />
           </section>
         ))}
       </div>

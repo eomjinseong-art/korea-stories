@@ -1,4 +1,4 @@
-import { nav, sisters, SITE_ENGLISH, SITE_NAME } from "@/lib/site";
+import { externalAnchor, nav, sisters, SITE_ENGLISH, SITE_NAME } from "@/lib/site";
 import { VisitorCount } from "./VisitorCount";
 
 export function Header() {
@@ -36,7 +36,7 @@ export function Header() {
       </nav>
       <nav
         aria-label="나두 역사·신화"
-        className="mx-auto flex max-w-6xl items-center gap-x-3 overflow-x-auto px-4 pb-2.5 text-xs"
+        className="mx-auto flex w-full min-w-0 max-w-6xl items-center gap-x-3 overflow-x-auto px-4 pb-2.5 text-xs"
       >
         <span
           aria-hidden="true"
@@ -49,10 +49,11 @@ export function Header() {
             <li key={site.href} className="shrink-0">
               <a
                 href={site.href}
-                className="text-muted underline decoration-line underline-offset-4 hover:text-terra"
-                rel="noopener noreferrer"
+                className="whitespace-nowrap text-muted underline decoration-line underline-offset-4 hover:text-terra"
+                {...externalAnchor(site.href)}
               >
-                {site.label}
+                {site.label}{" "}
+                <span className="text-[10px] tracking-wide text-terra">{site.english}</span>
               </a>
             </li>
           ))}

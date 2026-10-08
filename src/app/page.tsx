@@ -4,7 +4,7 @@ import { films } from "@/data/films";
 import { regions } from "@/data/regions";
 import { rulers } from "@/data/rulers";
 import { KoreaMap } from "@/components/KoreaMap";
-import { sisters, SITE_DESCRIPTION, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
+import { externalAnchor, sisters, SITE_DESCRIPTION, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
 
 const paths = [
   {
@@ -185,7 +185,7 @@ export default function HomePage() {
                 <a
                   href={site.href}
                   className="text-laurel underline decoration-line underline-offset-4 hover:text-terra"
-                  rel="noopener noreferrer"
+                  {...externalAnchor(site.href)}
                 >
                   {site.label}
                 </a>
