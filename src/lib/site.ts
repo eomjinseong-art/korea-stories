@@ -16,6 +16,7 @@ export const nav = [
   { href: "/#map", label: "지도" },
   { href: "/regions", label: "고을" },
   { href: "/rulers", label: "왕" },
+  { href: "/family-tree", label: "가족관계도" },
   { href: "/eras", label: "시대" },
   { href: "/films", label: "영화" },
   { href: "/sources", label: "출처" },

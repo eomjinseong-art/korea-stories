@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/regions",
     "/rulers",
+    "/family-tree",
     "/eras",
     "/films",
     "/sources",

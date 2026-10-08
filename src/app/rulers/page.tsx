@@ -17,8 +17,12 @@ export default function RulersPage() {
       <p className="mt-6 text-xs tracking-[0.2em] text-terra">RULERS</p>
       <h1 className="mt-2 font-serif text-4xl text-ink">왕</h1>
       <p className="mt-3 text-sm leading-7 text-muted">
-        남쪽 역사의 전체 왕 명단이 아닙니다. 고을 이야기와 이어지는 이름만 골랐습니다. 사도세자와 이순신은 왕이
-        아니므로 표시를 달리했습니다. 전설은 전설이라고 적습니다.
+        남쪽 역사의 전체 왕 명단이 아닙니다. 고을 이야기와 이어지는 이름만 골랐습니다. 부모와 왕위가 어떻게
+        갈리는지는{" "}
+        <a className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" href="/family-tree">
+          가족관계도
+        </a>
+        에 그렸습니다. 사도세자와 이순신은 왕이 아니므로 표시를 달리했습니다. 전설은 전설이라고 적습니다.
       </p>
       <div className="mt-10 space-y-12">
         {eraOrder.map((era) => {
