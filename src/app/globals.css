@@ -78,6 +78,13 @@ a.region:focus-visible .fill-gyeongsang { fill: #f1e4c8; }
 a.region:hover .fill-jeju,
 a.region:focus-visible .fill-jeju { fill: #d9e7da; }
 
+.battle-map text {
+  paint-order: stroke;
+  stroke: #fbf7f2;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
 .map-label {
   font-size: 13px;
   font-weight: 600;

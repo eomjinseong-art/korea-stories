@@ -1,4 +1,7 @@
+export { battles, battleBySlug } from "./battles";
 export { cities, cityBySlug, citiesInRegion } from "./cities";
+export { checklistSlugs, defenderBySlug, defenderEras, defenders, defendersByEra, defendersByLane } from "./defenders";
+export { defenderQuiz } from "./defender-quiz";
 export { eras } from "./eras";
 export { films, filmsBySlugs } from "./films";
 export { palaceBySlug, palaces } from "./palaces";

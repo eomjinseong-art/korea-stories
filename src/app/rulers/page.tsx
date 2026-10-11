@@ -22,7 +22,11 @@ export default function RulersPage() {
         <a className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" href="/family-tree">
           가족관계도
         </a>
-        에 그렸습니다. 사도세자와 이순신은 왕이 아니므로 표시를 달리했습니다. 전설은 전설이라고 적습니다.
+        에 그렸습니다. 사도세자와 이순신은 왕이 아니므로 표시를 달리했습니다. 명장과 독립운동가는{" "}
+        <a className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" href="/defenders">
+          나라를 지킨 사람들
+        </a>
+        에 따로 두었습니다. 전설은 전설이라고 적습니다.
       </p>
       <div className="mt-10 space-y-12">
         {eraOrder.map((era) => {

@@ -4,7 +4,7 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://korea-stories.vercel.app";
 
 export const SITE_DESCRIPTION =
-  "어려운 한국 역사를, 짧은 한국어로. 경기·강원·충청·전라·경상·제주의 고을과, 백제·신라·가야·고려·조선의 길을 잡는 왕을 전설과 역사를 구분해 적습니다.";
+  "어려운 한국 역사를, 짧은 한국어로. 경기·강원·충청·전라·경상·제주의 고을, 길을 잡는 왕, 나라를 지킨 명장과 독립운동가를 전설과 역사를 구분해 적습니다.";
 
 export const TAGLINE = "나두 — 나의 모든 일상을 AI와 함께";
 
@@ -18,6 +18,7 @@ export const nav = [
   { href: "/palaces", label: "궁궐" },
   { href: "/gates", label: "사대문" },
   { href: "/rulers", label: "왕" },
+  { href: "/defenders", label: "지킨 사람들" },
   { href: "/family-tree", label: "가족관계도" },
   { href: "/eras", label: "시대" },
   { href: "/films", label: "영화" },
@@ -42,6 +43,18 @@ export const sisters = [
 
 /** Origins a link checker must not fail when the response is still 404. */
 export const linkCheckAllow404 = ["https://iliad-stories.vercel.app"] as const;
+
+export const nadooTimeline = {
+  href: "https://nadoo-timeline.vercel.app",
+  label: "나두연표",
+  english: "Timeline",
+} as const;
+
+export const nadooWorld = [
+  { href: "https://nadoo-world.vercel.app/countries/cn", label: "나두세계 · 중국", english: "China" },
+  { href: "https://nadoo-world.vercel.app/countries/jp", label: "나두세계 · 일본", english: "Japan" },
+  { href: "https://nadoo-world.vercel.app/countries/mn", label: "나두세계 · 몽골", english: "Mongolia" },
+] as const;
 
 export const otherFamilyTrees = [
   { href: "https://rome-stories.vercel.app/family-tree", label: "로마이야기 가족관계도", english: "Rome" },

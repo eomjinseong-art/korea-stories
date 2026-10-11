@@ -1,4 +1,5 @@
 import { cities } from "@/data/cities";
+import { defenders } from "@/data/defenders";
 import { eras } from "@/data/eras";
 import { films } from "@/data/films";
 import { palaces } from "@/data/palaces";
@@ -30,29 +31,36 @@ const paths = [
     text: "백제·신라·가야의 길목, 고려와 조선에서 길을 잡는 이름. 전체 명단은 아닙니다.",
   },
   {
-    href: "/family-tree",
+    href: "/defenders",
     index: "04",
+    english: "Defenders",
+    title: "나라를 지킨 사람들",
+    text: "명장과 독립운동가. 살수·귀주·임진의 바다·봉오동과 청산리. 전승은 전승이라고 적습니다.",
+  },
+  {
+    href: "/family-tree",
+    index: "05",
     english: "Family Tree",
     title: "가족관계도",
     text: "고조선부터 조선 27왕까지. 왕위를 이은 순서와, 실제로 낳은 아버지를 구분해 그립니다.",
   },
   {
     href: "/eras",
-    index: "05",
+    index: "06",
     english: "Eras",
     title: "시대",
     text: "삼국과 가야, 통일신라, 고려, 조선. 한 단어로 외우기 전에 네 칸으로 나눕니다.",
   },
   {
     href: "/films",
-    index: "06",
+    index: "07",
     english: "Films",
     title: "관련 영화",
-    text: "사도, 명량, 남한산성, 나랏말싸미처럼 남쪽 역사를 배경으로 한 작품. 어디가 창작인지도 함께.",
+    text: "사도, 명량, 한산, 노량, 안시성, 봉오동 전투, 하얼빈, 영웅, 암살. 어디가 창작인지도 함께.",
   },
   {
     href: "/sources",
-    index: "07",
+    index: "08",
     english: "Sources",
     title: "출처",
     text: "삼국사기, 삼국유사, 고려사, 조선왕조실록. 이 사이트가 문장을 지어내지 않는 기준.",
@@ -69,6 +77,7 @@ const reading = [
   { href: "/rulers/sejong", label: "훈민정음은 한글이라는 이름보다 먼저" },
   { href: "/family-tree?dynasty=joseon&focus=js-seonjo", label: "선조는 명종의 아들이 아니다" },
   { href: "/rulers/sado", label: "사도세자는 왕이 아니었다" },
+  { href: "/defenders", label: "나라를 지킨 명장과 독립운동가" },
   { href: "/films#roaring-currents", label: "명량의 배 숫자는 영화 자막이 아니다" },
 ];
 
@@ -106,8 +115,8 @@ export default function HomePage() {
           </p>
           <p className="mt-3 text-xs text-terra">{TAGLINE}</p>
           <p className="mt-4 max-w-xl text-xs leading-6 text-muted">
-            전설은 전설이라고 적습니다. 고을 {regions.length}곳, 도시 {cities.length}곳, 궁 {palaces.length}곳, 길을 잡는 사람{" "}
-            {rulers.length}명, 영화·드라마 {films.length}편을 짧은 글로 정리했습니다. 고구려의 영토와 고려의 수도 개경은 이 지도
+            전설은 전설이라고 적습니다. 고을 {regions.length}곳, 도시 {cities.length}곳, 궁 {palaces.length}곳, 길을 잡는 사람 {rulers.length}명, 나라를 지킨 사람 {defenders.length}명, 영화·드라마 {films.length}
+            편을 짧은 글로 정리했습니다. 고구려의 영토와 고려의 수도 개경은 이 지도
             북쪽 밖입니다. 남쪽과 겹치는 대목만 적습니다.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm">
