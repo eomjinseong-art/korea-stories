@@ -15,6 +15,8 @@ export const COUPANG_LINE =
 export const nav = [
   { href: "/#map", label: "지도" },
   { href: "/regions", label: "고을" },
+  { href: "/palaces", label: "궁궐" },
+  { href: "/gates", label: "사대문" },
   { href: "/rulers", label: "왕" },
   { href: "/family-tree", label: "가족관계도" },
   { href: "/eras", label: "시대" },

@@ -1,6 +1,7 @@
 import { cities } from "@/data/cities";
 import { eras } from "@/data/eras";
 import { films } from "@/data/films";
+import { palaces } from "@/data/palaces";
 import { regions } from "@/data/regions";
 import { rulers } from "@/data/rulers";
 import { KoreaMap } from "@/components/KoreaMap";
@@ -15,36 +16,43 @@ const paths = [
     text: "경기·강원·충청·전라·경상, 그리고 제주. 지도의 칸이 곧 목차입니다.",
   },
   {
-    href: "/rulers",
+    href: "/palaces",
     index: "02",
+    english: "Palaces",
+    title: "궁궐",
+    text: "경복궁·창덕궁·창경궁·덕수궁·경희궁과 한양도성의 문. 법궁과 이궁, 불탄 해와 다시 세운 해.",
+  },
+  {
+    href: "/rulers",
+    index: "03",
     english: "Rulers",
     title: "왕",
     text: "백제·신라·가야의 길목, 고려와 조선에서 길을 잡는 이름. 전체 명단은 아닙니다.",
   },
   {
     href: "/family-tree",
-    index: "03",
+    index: "04",
     english: "Family Tree",
     title: "가족관계도",
     text: "고조선부터 조선 27왕까지. 왕위를 이은 순서와, 실제로 낳은 아버지를 구분해 그립니다.",
   },
   {
     href: "/eras",
-    index: "04",
+    index: "05",
     english: "Eras",
     title: "시대",
     text: "삼국과 가야, 통일신라, 고려, 조선. 한 단어로 외우기 전에 네 칸으로 나눕니다.",
   },
   {
     href: "/films",
-    index: "05",
+    index: "06",
     english: "Films",
     title: "관련 영화",
     text: "사도, 명량, 남한산성, 나랏말싸미처럼 남쪽 역사를 배경으로 한 작품. 어디가 창작인지도 함께.",
   },
   {
     href: "/sources",
-    index: "06",
+    index: "07",
     english: "Sources",
     title: "출처",
     text: "삼국사기, 삼국유사, 고려사, 조선왕조실록. 이 사이트가 문장을 지어내지 않는 기준.",
@@ -54,6 +62,8 @@ const paths = [
 const reading = [
   { href: "/#map", label: "지도에서 남쪽 여섯 고을의 자리" },
   { href: "/regions/gyeonggi/hanyang", label: "한양이 도읍이 된 해" },
+  { href: "/palaces/gyeongbokgung", label: "경복궁 중심 전각이 선 해" },
+  { href: "/gates#sungnyemun", label: "숭례문이 불탄 해와 다시 열린 해" },
   { href: "/regions/gyeongsang/gyeongju", label: "경주가 천 년 가까이 수도였던 이유" },
   { href: "/regions/chungcheong/buyeo", label: "백제가 부여에서 끝난 일" },
   { href: "/rulers/sejong", label: "훈민정음은 한글이라는 이름보다 먼저" },
@@ -96,8 +106,8 @@ export default function HomePage() {
           </p>
           <p className="mt-3 text-xs text-terra">{TAGLINE}</p>
           <p className="mt-4 max-w-xl text-xs leading-6 text-muted">
-            전설은 전설이라고 적습니다. 고을 {regions.length}곳, 도시 {cities.length}곳, 길을 잡는 사람 {rulers.length}
-            명, 영화 {films.length}편을 짧은 글로 정리했습니다. 고구려의 영토와 고려의 수도 개경은 이 지도
+            전설은 전설이라고 적습니다. 고을 {regions.length}곳, 도시 {cities.length}곳, 궁 {palaces.length}곳, 길을 잡는 사람{" "}
+            {rulers.length}명, 영화·드라마 {films.length}편을 짧은 글로 정리했습니다. 고구려의 영토와 고려의 수도 개경은 이 지도
             북쪽 밖입니다. 남쪽과 겹치는 대목만 적습니다.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm">

@@ -12,6 +12,7 @@ export const films: Film[] = [
     links: [
       { href: "/rulers/sejong", label: "세종" },
       { href: "/regions/gyeonggi/hanyang", label: "한양" },
+      { href: "/palaces/gyeongbokgung", label: "경복궁" },
     ],
   },
   {
@@ -25,6 +26,7 @@ export const films: Film[] = [
     links: [
       { href: "/rulers/sejong", label: "세종" },
       { href: "/regions/gyeonggi/hanyang", label: "한양" },
+      { href: "/palaces/gyeongbokgung", label: "경복궁" },
     ],
   },
   {
@@ -40,6 +42,7 @@ export const films: Film[] = [
       { href: "/rulers/sado", label: "사도세자" },
       { href: "/rulers/jeongjo", label: "정조" },
       { href: "/regions/gyeonggi/suwon", label: "수원" },
+      { href: "/palaces/changgyeonggung", label: "창경궁" },
     ],
   },
   {
@@ -53,6 +56,7 @@ export const films: Film[] = [
     links: [
       { href: "/rulers/gwanghae", label: "광해군" },
       { href: "/regions/jeju", label: "제주" },
+      { href: "/palaces/changdeokgung", label: "창덕궁" },
     ],
   },
   {
@@ -107,6 +111,37 @@ export const films: Film[] = [
     links: [
       { href: "/rulers/yeonsangun", label: "연산군" },
       { href: "/regions/gyeonggi/hanyang", label: "한양" },
+      { href: "/palaces/gyeongbokgung", label: "경복궁" },
+    ],
+  },
+  {
+    slug: "dae-jang-geum",
+    title: "대장금",
+    english: "Jewel in the Palace",
+    year: "2003",
+    kind: "드라마",
+    why: "중종 시대 궁중의 의녀를 처음 상상할 때 가장 많이 거론되는 드라마입니다. 이야기의 궁은 임진왜란 이전에 법궁이던 경복궁이고, 창경궁 환경전도 장금의 진료와 이어 읽습니다.",
+    fiction:
+      "장금이라는 의녀가 중종 때 실록에 나오고, 대비전과 중궁전에서 진료해 상을 받은 일은 기록입니다. 궁중 음식과 경쟁, 사랑의 줄거리는 드라마입니다. 화면의 전각은 세트인 부분이 큽니다. 경복궁을 그 화면 그대로 기억하면 안 됩니다.",
+    links: [
+      { href: "/palaces/gyeongbokgung", label: "경복궁" },
+      { href: "/palaces/changgyeonggung", label: "창경궁 · 환경전" },
+      { href: "/family-tree?dynasty=joseon&focus=js-jungjong", label: "가족관계도의 중종" },
+    ],
+  },
+  {
+    slug: "the-last-princess",
+    title: "덕혜옹주",
+    english: "The Last Princess",
+    year: "2016",
+    kind: "영화",
+    why: "대한제국이 끝난 뒤의 황실을, 고종의 딸 덕혜옹주의 일생으로 만날 때 자주 찾는 영화입니다. 덕수궁과 창덕궁 낙선재가 그 삶의 자리입니다.",
+    fiction:
+      "덕혜옹주는 1912년에 태어난 고종과 귀인 양씨의 딸입니다. 일본으로 갔다가 돌아와 1989년 창덕궁 낙선재에서 죽었습니다. 영화의 구출과 개인의 대사는 극입니다. 죽은 자리와 극의 결말을 같은 문장으로 외우지 않습니다.",
+    links: [
+      { href: "/palaces/deoksugung", label: "덕수궁" },
+      { href: "/palaces/changdeokgung", label: "창덕궁 · 낙선재" },
+      { href: "/family-tree?dynasty=joseon&focus=js-gojong", label: "가족관계도의 고종" },
     ],
   },
 ];

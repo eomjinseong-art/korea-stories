@@ -109,6 +109,20 @@ export default async function CityPage({ params }: Props) {
         </a>
       </p>
 
+      {city.slug === "hanyang" ? (
+        <p className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+          <a className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" href="/palaces">
+            다섯 궁궐
+          </a>
+          <a className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" href="/gates">
+            한양도성과 사대문
+          </a>
+          <a className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" href="/palaces/timeline">
+            궁궐 연표
+          </a>
+        </p>
+      ) : null}
+
       <Elsewhere links={city.links} />
 
       <FilmCards slugs={city.filmSlugs} />
