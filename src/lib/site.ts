@@ -29,10 +29,13 @@ export const sisters = [
   { href: "https://iliad-stories.vercel.app", label: "일리아스이야기", english: "Iliad" },
   { href: "https://greece-stories.vercel.app", label: "그리스이야기", english: "Greece" },
   { href: "https://rome-stories.vercel.app", label: "로마이야기", english: "Rome" },
+  { href: "https://germanic-stories.vercel.app", label: "게르만이야기", english: "Germanic" },
+  { href: "https://viking-stories.vercel.app", label: "바이킹이야기", english: "Vikings" },
   { href: "https://egypt-stories.vercel.app", label: "이집트이야기", english: "Egypt" },
   { href: "https://persia-stories.vercel.app", label: "페르시아이야기", english: "Persia" },
   { href: "https://the-chosen-korean.vercel.app", label: "더 초즌 · 성경", english: "The Chosen · Bible" },
   { href: "https://philosophy-stories.vercel.app", label: "철학이야기", english: "Philosophy" },
+  { href: "https://nadoo-world.vercel.app", label: "나두세계", english: "World" },
   { href: "https://nadoo-timeline.vercel.app", label: "나두연표", english: "Timeline" },
   { href: "https://tinalinkeom.vercel.app", label: "나두 허브", english: "Nadoo Hub" },
 ] as const;
@@ -42,6 +45,8 @@ export const linkCheckAllow404 = ["https://iliad-stories.vercel.app"] as const;
 
 export const otherFamilyTrees = [
   { href: "https://rome-stories.vercel.app/family-tree", label: "로마이야기 가족관계도", english: "Rome" },
+  { href: "https://germanic-stories.vercel.app/family-tree", label: "게르만이야기 가족관계도", english: "Germanic" },
+  { href: "https://viking-stories.vercel.app/family-tree", label: "바이킹이야기 가족관계도", english: "Vikings" },
   { href: "https://greece-stories.vercel.app/family-tree", label: "그리스이야기 가족관계도", english: "Greece" },
   { href: "https://egypt-stories.vercel.app/family-tree", label: "이집트이야기 가족관계도", english: "Egypt" },
   { href: "https://persia-stories.vercel.app/family-tree", label: "페르시아이야기 가족관계도", english: "Persia" },
@@ -51,6 +56,8 @@ export const otherFamilyTrees = [
 
 export const otherFilms = [
   { href: "https://rome-stories.vercel.app/movies", label: "로마이야기 영화", english: "Rome" },
+  { href: "https://germanic-stories.vercel.app/films", label: "게르만이야기 영화", english: "Germanic" },
+  { href: "https://viking-stories.vercel.app/films", label: "바이킹이야기 영화", english: "Vikings" },
   { href: "https://greece-stories.vercel.app/movies", label: "그리스이야기 영화", english: "Greece" },
   { href: "https://egypt-stories.vercel.app/movies", label: "이집트이야기 영화", english: "Egypt" },
   { href: "https://persia-stories.vercel.app/movies", label: "페르시아이야기 영화", english: "Persia" },
