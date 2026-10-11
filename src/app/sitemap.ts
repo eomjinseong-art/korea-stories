@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { cities } from "@/data/cities";
+import { palaces } from "@/data/palaces";
 import { regions } from "@/data/regions";
 import { rulers } from "@/data/rulers";
 import { SITE_URL } from "@/lib/site";
@@ -8,6 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     "/",
     "/regions",
+    "/palaces",
+    "/palaces/timeline",
+    "/gates",
     "/rulers",
     "/family-tree",
     "/eras",
@@ -16,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...regions.map((region) => `/regions/${region.slug}`),
     ...cities.map((city) => `/regions/${city.region}/${city.slug}`),
     ...rulers.map((ruler) => `/rulers/${ruler.slug}`),
+    ...palaces.map((palace) => `/palaces/${palace.slug}`),
   ];
 
   return paths.map((path) => ({

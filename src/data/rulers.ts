@@ -280,6 +280,8 @@ export const rulers: Ruler[] = [
     filmSlugs: [],
     links: [
       { href: "/regions/gyeonggi/hanyang", label: "한양" },
+      { href: "/palaces/gyeongbokgung", label: "경복궁" },
+      { href: "/gates", label: "한양도성" },
       { href: "/regions/jeolla/jeonju", label: "전주" },
       { href: "/rulers/sejong", label: "세종" },
       { href: "https://nadoo-timeline.vercel.app/events/founding-joseon", label: "조선의 건국 · 나두연표" },
@@ -304,6 +306,7 @@ export const rulers: Ruler[] = [
     filmSlugs: ["the-kings-letters", "forbidden-dream"],
     links: [
       { href: "/regions/gyeonggi/hanyang", label: "한양" },
+      { href: "/palaces/gyeongbokgung", label: "경복궁" },
       { href: "/regions/chungcheong", label: "세종시라는 이름" },
       { href: "https://nadoo-timeline.vercel.app/events/hunminjeongeum-promulgated", label: "훈민정음 반포 · 나두연표" },
     ],
@@ -325,7 +328,10 @@ export const rulers: Ruler[] = [
       "영화 「왕의 남자」의 장생과 공길은 실존 광대가 아닙니다. 연산군 시대의 궁궐 분위기를 빌린 극입니다. 사화의 희생자와 영화의 사랑 이야기를 같은 문장으로 외우지 않습니다.",
     ],
     filmSlugs: ["king-and-the-clown"],
-    links: [{ href: "/regions/gyeonggi/hanyang", label: "한양" }],
+    links: [
+      { href: "/regions/gyeonggi/hanyang", label: "한양" },
+      { href: "/palaces/gyeongbokgung", label: "경복궁" },
+    ],
   },
   {
     slug: "gwanghae",
@@ -346,6 +352,8 @@ export const rulers: Ruler[] = [
     filmSlugs: ["masquerade"],
     links: [
       { href: "/regions/jeju", label: "제주 유배" },
+      { href: "/palaces/changdeokgung", label: "창덕궁" },
+      { href: "/palaces/gyeonghuigung", label: "경희궁" },
       { href: "/regions/gyeonggi", label: "경기도 · 대동법" },
       { href: "/rulers/yi-sun-sin", label: "이순신 · 임진왜란" },
     ],
@@ -371,6 +379,8 @@ export const rulers: Ruler[] = [
       { href: "/rulers/sado", label: "사도세자" },
       { href: "/rulers/jeongjo", label: "정조" },
       { href: "/regions/gyeonggi/hanyang", label: "한양 · 창경궁" },
+      { href: "/palaces/changgyeonggung", label: "창경궁" },
+      { href: "/palaces/gyeonghuigung", label: "경희궁" },
     ],
   },
   {
@@ -394,6 +404,7 @@ export const rulers: Ruler[] = [
       { href: "/rulers/yeongjo", label: "영조" },
       { href: "/rulers/jeongjo", label: "정조" },
       { href: "/regions/gyeonggi/suwon", label: "수원 화성" },
+      { href: "/palaces/changgyeonggung", label: "창경궁" },
     ],
   },
   {
@@ -417,6 +428,8 @@ export const rulers: Ruler[] = [
       { href: "/rulers/sado", label: "사도세자" },
       { href: "/rulers/yeongjo", label: "영조" },
       { href: "/regions/gyeonggi/suwon", label: "수원" },
+      { href: "/palaces/changdeokgung", label: "창덕궁" },
+      { href: "/palaces/changgyeonggung", label: "창경궁" },
       { href: "https://philosophy-stories.vercel.app/people/dasan", label: "다산 정약용 · 철학이야기" },
     ],
   },

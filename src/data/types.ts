@@ -25,12 +25,17 @@ export type LinkItem = {
   label: string;
 };
 
+/** A sentence piece. A string is plain text. A link is an existing route or a checked external page. */
+export type Inline = string | LinkItem;
+
+export type Paragraph = Inline[];
+
 export type Film = {
   slug: string;
   title: string;
   english: string;
   year: string;
-  kind: "영화";
+  kind: "영화" | "드라마";
   why: string;
   fiction: string;
   links: LinkItem[];
