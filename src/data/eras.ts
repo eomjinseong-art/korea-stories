@@ -56,6 +56,7 @@ export const eras: Era[] = [
     links: [
       { href: "https://philosophy-stories.vercel.app/people/toegye", label: "퇴계 이황 · 철학이야기" },
       { href: "https://philosophy-stories.vercel.app/people/yulgok", label: "율곡 이이 · 철학이야기" },
+      { href: "https://nadoo-world.vercel.app/countries/kr", label: "오늘의 대한민국 · 나두세계" },
     ],
   },
 ];
