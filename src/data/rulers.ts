@@ -169,6 +169,7 @@ export const rulers: Ruler[] = [
     links: [
       { href: "/regions/gyeongsang/gyeongju", label: "경주" },
       { href: "/rulers/uija", label: "의자왕" },
+      { href: "/defenders/kim-yu-sin", label: "김유신" },
       { href: "/eras#unified-silla", label: "통일신라" },
       { href: "https://nadoo-timeline.vercel.app/events/silla-unification", label: "신라의 삼국 통일 · 나두연표" },
       { href: "https://philosophy-stories.vercel.app/people/uisang", label: "의상 · 철학이야기" },
@@ -308,6 +309,7 @@ export const rulers: Ruler[] = [
       { href: "/regions/gyeonggi/hanyang", label: "한양" },
       { href: "/palaces/gyeongbokgung", label: "경복궁" },
       { href: "/regions/chungcheong", label: "세종시라는 이름" },
+      { href: "/defenders/kim-jong-seo", label: "김종서 · 6진" },
       { href: "https://nadoo-timeline.vercel.app/events/hunminjeongeum-promulgated", label: "훈민정음 반포 · 나두연표" },
     ],
   },
@@ -449,8 +451,10 @@ export const rulers: Ruler[] = [
       "명량 해전은 그해, 해남과 진도 사이의 좁은 물목에서 벌어집니다. 남은 배가 열두 척가량이라는 취지로 조정에 장계를 올린 일이 난중일기에 남아 있습니다. 그 문장을 여기서 그대로 베끼지는 않습니다. 일본 배의 척수는 기록마다 달라, 영화 「명량」의 함대 규모를 숫자로 외우지 않는 편이 좋습니다. 물목을 지킨 결과 자체는 전란의 사실입니다.",
       "1598년 노량에서 퇴각하는 일본 함대를 치다 죽습니다. 전쟁이 끝나 가는 해입니다. 무덤은 충청 아산에 있습니다. 태어남은 한양, 바다는 전라와 남해, 무덤은 아산입니다. 한 고을의 수호신으로만 쓰면 지도가 줄어듭니다.",
     ],
-    filmSlugs: ["roaring-currents"],
+    filmSlugs: ["hansan", "roaring-currents", "noryang"],
     links: [
+      { href: "/defenders/yi-sun-sin", label: "나라를 지킨 사람들 · 이순신" },
+      { href: "/defenders/battles/imjin-seas", label: "한산·명량·노량" },
       { href: "/regions/jeolla", label: "전라도" },
       { href: "/regions/gyeongsang", label: "경상도 · 부산포" },
       { href: "/regions/gyeonggi/hanyang", label: "한양" },

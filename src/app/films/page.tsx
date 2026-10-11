@@ -20,8 +20,12 @@ export default function FilmsPage() {
       <h1 className="mt-2 font-serif text-4xl text-ink">관련 영화</h1>
       <p className="mt-3 text-sm leading-7 text-muted">
         한국 역사를 처음 상상할 때 영화가 먼저인 경우가 많습니다. 제목은 실제로 나온 작품만 적었습니다. 궁궐 장의 드라마는
-        영화와 종류를 구분해 함께 둡니다. 각 카드는 왜 보면 좋은지, 어디가 창작인지 두 단락으로 나눕니다. 스트리밍 링크는
-        없습니다.
+        영화와 종류를 구분해 함께 둡니다. 각 카드는 왜 보면 좋은지, 어디가 창작인지 두 단락으로 나눕니다. 명량·한산·노량·안시성·봉오동 전투·하얼빈·영웅·암살의
+        체크리스트는{" "}
+        <a className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" href="/defenders#films">
+          나라를 지킨 사람들
+        </a>
+        에 있습니다. 스트리밍 링크는 없습니다.
       </p>
       <FilmCards slugs={films.map((film) => film.slug)} heading="작품" />
       <CrossSiteSection id="other-films-heading" title="다른 사이트의 영화" english="Films on sister sites" links={otherFilms} />

@@ -16,6 +16,9 @@ export default function NotFound() {
         <a className="text-terra underline" href="/rulers">
           왕
         </a>
+        <a className="text-terra underline" href="/defenders">
+          지킨 사람들
+        </a>
       </div>
     </div>
   );

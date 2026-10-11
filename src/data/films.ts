@@ -66,9 +66,11 @@ export const films: Film[] = [
     year: "2014",
     kind: "영화",
     why: "1597년 명량, 적은 수의 판옥선으로 좁은 물목을 막은 싸움을 크게 보고 싶을 때 고릅니다. 이순신이 파직되었다가 돌아온 직후의 일입니다.",
-    fiction: "조선 배가 열 척 안팎이었다는 큰 줄은 난중일기와 장계의 기록과 맞습니다. 일본 배의 정확한 척수와, 배 위에서 누가 누구와 맞붙었는지는 영화의 스펙터클입니다. 대사는 사료 문장을 그대로 옮긴 것이 아닙니다.",
+    fiction: "조선 배가 열두 척가량이라는 큰 줄은 난중일기와 장계의 기록과 맞습니다. 일본 배의 정확한 척수와, 배 위에서 누가 누구와 맞붙었는지는 영화의 스펙터클입니다. 대사는 사료 문장을 그대로 옮긴 것이 아닙니다.",
     links: [
-      { href: "/rulers/yi-sun-sin", label: "이순신" },
+      { href: "/defenders/yi-sun-sin", label: "이순신" },
+      { href: "/rulers/yi-sun-sin", label: "왕의 목록 · 이순신" },
+      { href: "/defenders/battles/imjin-seas", label: "임진왜란 주요 해전" },
       { href: "/regions/jeolla", label: "전라도" },
       { href: "/regions/gyeongsang", label: "경상도" },
     ],
@@ -95,6 +97,7 @@ export const films: Film[] = [
     why: "660년 황산벌, 백제의 계백과 신라의 김유신이 맞선 싸움을 코미디로 만나 본 사람이 많습니다. 진지한 사극이 아니라 말놀이에 가깝습니다.",
     fiction: "황산벌 전투와 계백, 그리고 그해 백제가 멸망한 일은 역사입니다. 장소는 오늘의 충남 논산 일대로 봅니다. 영화의 사투리 대결과 개인 일화는 창작입니다. 오천 명의 결사대는 삼국사기가 전하는 숫자이지, 영화의 장면 하나하나가 그 기록은 아닙니다.",
     links: [
+      { href: "/defenders/kim-yu-sin", label: "김유신" },
       { href: "/rulers/uija", label: "의자왕" },
       { href: "/regions/chungcheong", label: "충청도" },
       { href: "/regions/chungcheong/buyeo", label: "부여" },
@@ -142,6 +145,108 @@ export const films: Film[] = [
       { href: "/palaces/deoksugung", label: "덕수궁" },
       { href: "/palaces/changdeokgung", label: "창덕궁 · 낙선재" },
       { href: "/family-tree?dynasty=joseon&focus=js-gojong", label: "가족관계도의 고종" },
+    ],
+  },
+  {
+    slug: "hansan",
+    title: "한산: 용의 출현",
+    english: "Hansan: Rising Dragon",
+    year: "2022",
+    kind: "영화",
+    why: "1592년 한산도 해전을, 학익진으로 일본 수군을 막은 장면으로 보고 싶을 때 고릅니다. 명량·노량과 한 감독의 연작입니다.",
+    fiction:
+      "한산도에서 조선 수군이 일본 함대를 크게 꺾고 서해로 가는 바닷길을 지킨 일은 기록된 전투입니다. 학익진이라는 진 이름도 장계에 나옵니다. 첩자와 개인 대결, 배 위의 대화는 극본입니다. 제목의 용은 상징이지 당시의 군함 이름이 아닙니다.",
+    links: [
+      { href: "/defenders/yi-sun-sin", label: "이순신" },
+      { href: "/rulers/yi-sun-sin", label: "왕의 목록 · 이순신" },
+      { href: "/defenders/battles/imjin-seas", label: "임진왜란 주요 해전" },
+    ],
+  },
+  {
+    slug: "noryang",
+    title: "노량: 죽음의 바다",
+    english: "Noryang: Deadly Sea",
+    year: "2023",
+    kind: "영화",
+    why: "1598년 노량, 일본군이 물러가는 길목을 막다 이순신이 죽은 마지막 해전을 볼 때 고릅니다.",
+    fiction:
+      "노량에서 조선과 명나라 수군이 퇴각하는 일본 함대를 치고, 이순신이 그 전투에서 죽은 일은 역사입니다. 죽기 직전 자기 죽음을 알리지 말라는 대사는 후대 전기에 전하는 장면이라 전승으로 둡니다. 폭발을 키운 장면은 영화입니다.",
+    links: [
+      { href: "/defenders/yi-sun-sin", label: "이순신" },
+      { href: "/defenders/battles/imjin-seas", label: "임진왜란 주요 해전" },
+      { href: "/regions/gyeongsang", label: "경상도" },
+    ],
+  },
+  {
+    slug: "ansi-fortress",
+    title: "안시성",
+    english: "The Great Battle",
+    year: "2018",
+    kind: "영화",
+    why: "645년 당 태종의 고구려 원정에서 안시성이 버티는 이야기를 크게 보고 싶을 때 고릅니다.",
+    fiction:
+      "안시성이 당군에 떨어지지 않고, 당 태종이 이 원정에서 성을 함락하지 못한 채 돌아간 일은 기록입니다. 성주의 이름 양만춘은 당시 기록에 보이지 않는 전승입니다. 영화는 그 이름을 사실처럼 쓰고, 성벽 위의 개인 무용을 키웁니다.",
+    links: [
+      { href: "/defenders/ansi-commander", label: "안시성 성주" },
+      { href: "https://nadoo-world.vercel.app/countries/cn", label: "나두세계 · 중국" },
+    ],
+  },
+  {
+    slug: "bongo-dong",
+    title: "봉오동 전투",
+    english: "The Battle: Roar to Victory",
+    year: "2019",
+    kind: "영화",
+    why: "1920년 6월 봉오동에서 독립군이 일본군을 골짜기로 끌어들여 친 승리를 볼 때 고릅니다.",
+    fiction:
+      "봉오동 승리는 역사입니다. 홍범도가 연합 부대를 이끈 대표 지휘관으로 기억됩니다. 화면 속 개인들의 사연과 전투 동작은 극입니다. 그해 10월 김좌진의 청산리와는 다른 싸움이라, 두 전투를 한 장면으로 합치지 않습니다.",
+    links: [
+      { href: "/defenders/hong-beom-do", label: "홍범도" },
+      { href: "/defenders/kim-jwa-jin", label: "김좌진 · 청산리는 다른 달" },
+      { href: "/defenders/battles/cheongsanri", label: "청산리·봉오동" },
+    ],
+  },
+  {
+    slug: "harbin",
+    title: "하얼빈",
+    english: "Harbin",
+    year: "2024",
+    kind: "영화",
+    why: "1909년 하얼빈역에서 안중근이 이토 히로부미를 쏜 사건으로 들어가고 싶을 때 고릅니다.",
+    fiction:
+      "하얼빈역의 저격과, 그 뒤 일본 법정에서 사형 판결을 받은 일은 역사입니다. 영화를 수사극처럼 이끄는 관계와 대사는 극본입니다. 안중근이 동양 평화를 말했다고 해서, 영화의 모든 대사가 옥중 기록은 아닙니다.",
+    links: [
+      { href: "/defenders/an-jung-geun", label: "안중근" },
+      { href: "https://nadoo-world.vercel.app/countries/jp", label: "나두세계 · 일본" },
+    ],
+  },
+  {
+    slug: "hero",
+    title: "영웅",
+    english: "Hero",
+    year: "2022",
+    kind: "영화",
+    why: "안중근의 하얼빈 의거와 재판을 뮤지컬 영화로 만나 볼 때 고릅니다. 노래가 극의 뼈대입니다.",
+    fiction:
+      "의거와 재판이라는 틀은 역사입니다. 노래, 감정의 장면, 인물 사이의 각색은 뮤지컬의 창작입니다. 「하얼빈」과 같은 사건을 다루지만 장르는 다릅니다.",
+    links: [
+      { href: "/defenders/an-jung-geun", label: "안중근" },
+      { href: "/films#harbin", label: "영화 「하얼빈」" },
+    ],
+  },
+  {
+    slug: "assassination",
+    title: "암살",
+    english: "Assassination",
+    year: "2015",
+    kind: "영화",
+    why: "1930년대 상하이 임시정부와 의열단이 어떤 분위기였는지 상상할 때 자주 거론됩니다.",
+    fiction:
+      "김원봉과 임시정부 시대는 역사의 배경입니다. 영화의 암살 표적과 팀, 이중 스파이는 창작입니다. 1932년 윤봉길의 훙커우 공원 의거, 이봉창의 도쿄 의거와는 다른 이야기입니다. 김구가 그 의거들을 조직한 일과 이 극의 작전을 같은 사건으로 외우지 않습니다.",
+    links: [
+      { href: "/defenders/kim-won-bong", label: "김원봉" },
+      { href: "/defenders/kim-gu", label: "김구" },
+      { href: "/defenders/yun-bong-gil", label: "윤봉길 · 다른 의거" },
     ],
   },
 ];
