@@ -1,5 +1,7 @@
 "use client";
 
+import { setActiveTree } from "@/components/TreePanel";
+
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { Elsewhere } from "@/components/Elsewhere";
 import {
@@ -71,6 +73,10 @@ export function FamilyTreeView() {
     [dynasty.id, selected, tree],
   );
   const relations = selected && selectedNode && selectedNode.marker !== "gap" ? relationsOf(dynasty.id, selected) : null;
+
+  useEffect(() => {
+    setActiveTree(dynastyId);
+  }, [dynastyId]);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);

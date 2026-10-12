@@ -3,6 +3,7 @@ import { Crumb } from "@/components/Crumb";
 import { CrossSiteSection } from "@/components/CrossSiteSection";
 import { Elsewhere } from "@/components/Elsewhere";
 import { FamilyTreeView } from "@/components/FamilyTreeView";
+import { TreePanel } from "@/components/TreePanel";
 import { CAVEATS, DYNASTIES, relationsOf, type Dynasty, type RelationPerson } from "@/data/family-tree";
 import { rulerBySlug } from "@/data/rulers";
 import { otherFamilyTrees, SITE_NAME, SITE_URL } from "@/lib/site";
@@ -88,7 +89,9 @@ export default function FamilyTreePage() {
           묶입니다. 이복형제입니다. … 는 왕을 뺀 자리이지 부자 관계가 아닙니다.
         </p>
         {DYNASTIES.map((item) => (
-          <DynastyProse key={item.id} dynasty={item} />
+          <TreePanel key={item.id} id={item.id} defaultId="gojoseon">
+            <DynastyProse dynasty={item} />
+          </TreePanel>
         ))}
       </section>
 
