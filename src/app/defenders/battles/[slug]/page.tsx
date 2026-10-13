@@ -6,6 +6,7 @@ import { DefenderNav } from "@/components/DefenderNav";
 import { FilmCards } from "@/components/FilmCards";
 import { battleBySlug, battles } from "@/data/battles";
 import { externalAnchor } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -86,6 +87,7 @@ export default async function BattlePage({ params }: Props) {
         ))}
       </p>
       {battle.filmSlugs.length > 0 ? <FilmCards slugs={battle.filmSlugs} /> : null}
+      <CoupangCard />
     </article>
   );
 }

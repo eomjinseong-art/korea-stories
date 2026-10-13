@@ -7,6 +7,7 @@ import { battleBySlug } from "@/data/battles";
 import { defenderBySlug, defenders } from "@/data/defenders";
 import { externalAnchor, SITE_URL } from "@/lib/site";
 import { NadooHubPersonLink } from "@/components/NadooHubLink";
+import { CoupangCard } from "@/components/CoupangCard";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -128,6 +129,7 @@ export default async function DefenderPage({ params }: Props) {
         </p>
       )}
       <NadooHubPersonLink base="https://korea-stories.vercel.app/defenders/" slug={person.slug!} />
+      <CoupangCard />
     </article>
   );
 }
