@@ -5,6 +5,7 @@ import { Etymology } from "@/components/Etymology";
 import { FilmCards } from "@/components/FilmCards";
 import { cityBySlug } from "@/data/cities";
 import { regionBySlug, regions } from "@/data/regions";
+import { CoupangCard } from "@/components/CoupangCard";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -141,6 +142,7 @@ export default async function RegionPage({ params }: Props) {
       </section>
 
       <FilmCards slugs={region.filmSlugs} />
+      <CoupangCard />
     </article>
   );
 }

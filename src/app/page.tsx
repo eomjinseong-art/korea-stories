@@ -7,6 +7,7 @@ import { regions } from "@/data/regions";
 import { rulers } from "@/data/rulers";
 import { KoreaMap } from "@/components/KoreaMap";
 import { externalAnchor, sisters, SITE_DESCRIPTION, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 const paths = [
   {
@@ -133,6 +134,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <CoupangCard />
       <div className="dentil opacity-50" aria-hidden="true" />
 
       <section className="mt-10" aria-labelledby="era-heading">

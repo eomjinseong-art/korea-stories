@@ -6,6 +6,7 @@ import { FilmCards } from "@/components/FilmCards";
 import { Prose } from "@/components/Prose";
 import { palaceBySlug, palaces, type NamedNote } from "@/data/palaces";
 import { externalAnchor } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -111,6 +112,7 @@ export default async function PalacePage({ params }: Props) {
       </p>
 
       <FilmCards slugs={palace.filmSlugs} heading="궁궐이 나오는 영화·드라마" />
+      <CoupangCard />
     </article>
   );
 }

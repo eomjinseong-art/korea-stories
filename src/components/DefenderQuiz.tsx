@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { QuizQuestion } from "@/data/defender-quiz";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export function DefenderQuiz({ questions }: { questions: QuizQuestion[] }) {
   const [picks, setPicks] = useState<Record<string, number | undefined>>({});
@@ -74,6 +75,7 @@ export function DefenderQuiz({ questions }: { questions: QuizQuestion[] }) {
           {questions.length}문제 중 {score}개
         </p>
       ) : null}
+      {graded ? <CoupangCard /> : null}
     </form>
   );
 }
