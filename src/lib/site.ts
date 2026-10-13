@@ -38,6 +38,7 @@ export const sisters = [
   { href: "https://philosophy-stories.vercel.app", label: "철학이야기", english: "Philosophy" },
   { href: "https://nadoo-world.vercel.app", label: "나두세계", english: "World" },
   { href: "https://nadoo-timeline.vercel.app", label: "나두연표", english: "Timeline" },
+  { href: "https://nadoo-samguk.vercel.app", label: "나두삼국지", english: "Three Kingdoms" },
   { href: "https://tinalinkeom.vercel.app", label: "나두 허브", english: "Nadoo Hub" },
 ] as const;
 
