@@ -6,6 +6,7 @@ import { FilmCards } from "@/components/FilmCards";
 import { battleBySlug } from "@/data/battles";
 import { defenderBySlug, defenders } from "@/data/defenders";
 import { externalAnchor, SITE_URL } from "@/lib/site";
+import { NadooHubPersonLink } from "@/components/NadooHubLink";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -126,6 +127,7 @@ export default async function DefenderPage({ params }: Props) {
           는 다른 인물과 전투의 작품입니다.
         </p>
       )}
+      <NadooHubPersonLink base="https://korea-stories.vercel.app/defenders/" slug={person.slug!} />
     </article>
   );
 }
