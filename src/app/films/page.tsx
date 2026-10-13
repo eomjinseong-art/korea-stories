@@ -4,6 +4,7 @@ import { CrossSiteSection } from "@/components/CrossSiteSection";
 import { FilmCards } from "@/components/FilmCards";
 import { films } from "@/data/films";
 import { otherFilms } from "@/lib/site";
+import { NadooHubFilmsLink } from "@/components/NadooHubLink";
 
 export const metadata: Metadata = {
   title: "관련 영화",
@@ -29,6 +30,7 @@ export default function FilmsPage() {
       </p>
       <FilmCards slugs={films.map((film) => film.slug)} heading="작품" />
       <CrossSiteSection id="other-films-heading" title="다른 사이트의 영화" english="Films on sister sites" links={otherFilms} />
+      <NadooHubFilmsLink />
     </div>
   );
 }

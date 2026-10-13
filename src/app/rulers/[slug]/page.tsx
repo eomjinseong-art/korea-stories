@@ -5,6 +5,7 @@ import { FilmCards } from "@/components/FilmCards";
 import { familyTreeHref } from "@/data/family-tree";
 import { rulerBySlug, rulers } from "@/data/rulers";
 import { externalAnchor } from "@/lib/site";
+import { NadooHubPersonLink } from "@/components/NadooHubLink";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -79,6 +80,7 @@ export default async function RulerPage({ params }: Props) {
         </p>
       ) : null}
       <FilmCards slugs={ruler.filmSlugs} />
+      <NadooHubPersonLink base="https://korea-stories.vercel.app/rulers/" slug={ruler.slug!} />
     </article>
   );
 }
