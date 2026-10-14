@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/palaces",
     "/palaces/timeline",
     "/gates",
+    "/seoul",
     "/rulers",
     "/family-tree",
     "/eras",

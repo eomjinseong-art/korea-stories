@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoulLinksFor } from "@/data/seoul-explorer";
 import { notFound } from "next/navigation";
 import { Crumb } from "@/components/Crumb";
 import { Etymology } from "@/components/Etymology";
@@ -99,7 +100,7 @@ export default async function PalacePage({ params }: Props) {
       ) : null}
 
       <p className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-        {palace.links.map((link) => (
+        {[...palace.links, ...seoulLinksFor("palaces", palace.slug)].map((link) => (
           <a
             key={link.href}
             href={link.href}

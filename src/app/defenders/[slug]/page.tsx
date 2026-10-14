@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoulLinksFor } from "@/data/seoul-explorer";
 import { notFound } from "next/navigation";
 import { Crumb } from "@/components/Crumb";
 import { DefenderNav } from "@/components/DefenderNav";
@@ -103,9 +104,9 @@ export default async function DefenderPage({ params }: Props) {
           </a>
         </p>
       ) : null}
-      {person.links.length > 0 ? (
+      {(person.links.length > 0 || seoulLinksFor("defenders", person.slug).length > 0) ? (
         <p className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-          {person.links.map((link) => (
+          {[...person.links, ...seoulLinksFor("defenders", person.slug)].map((link) => (
             <a
               key={link.href}
               href={link.href}

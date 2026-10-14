@@ -17,6 +17,7 @@ export const nav = [
   { href: "/regions", label: "고을" },
   { href: "/palaces", label: "궁궐" },
   { href: "/gates", label: "사대문" },
+  { href: "/seoul", label: "서울 시내" },
   { href: "/rulers", label: "왕" },
   { href: "/defenders", label: "지킨 사람들" },
   { href: "/family-tree", label: "가족관계도" },
