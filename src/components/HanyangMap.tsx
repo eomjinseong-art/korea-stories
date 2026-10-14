@@ -23,7 +23,8 @@ export function HanyangMap() {
   return (
     <figure className="rounded-2xl border border-line bg-card p-3 shadow-sm sm:p-4">
       <figcaption className="px-1 text-xs leading-6 text-muted">
-        한양도성 약도. 축척이 아니고, 북쪽이 위입니다. 점선 문은 실물이 없습니다.
+        한양도성 약도. 축척이 아니고, 북쪽이 위입니다. 점선 문은 실물이 없습니다. 사진·사건·산책길이 있는 큰 지도는{" "}
+        <a href="/seoul" className="text-laurel underline decoration-line underline-offset-4 hover:text-terra">서울 시내 탐험</a>에 있습니다.
       </figcaption>
       <div className="mx-auto mt-2 w-full max-w-[440px]">
         <svg viewBox="0 0 360 440" role="img" aria-labelledby="hanyang-map-title hanyang-map-desc" className="block h-auto w-full">

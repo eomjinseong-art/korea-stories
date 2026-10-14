@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoulLinksFor } from "@/data/seoul-explorer";
 import { notFound } from "next/navigation";
 import { Crumb } from "@/components/Crumb";
 import { FilmCards } from "@/components/FilmCards";
@@ -58,7 +59,7 @@ export default async function RulerPage({ params }: Props) {
           </p>
         ))}
       </div>
-      {ruler.links.length > 0 || treeHref ? (
+      {(ruler.links.length > 0 || seoulLinksFor("rulers", ruler.slug).length > 0) || treeHref ? (
         <p className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm">
           {treeHref ? (
             <a
@@ -68,7 +69,7 @@ export default async function RulerPage({ params }: Props) {
               가족관계도에서 보기
             </a>
           ) : null}
-          {ruler.links.map((link) => (
+          {[...ruler.links, ...seoulLinksFor("rulers", ruler.slug)].map((link) => (
             <a
               key={link.href}
               href={link.href}

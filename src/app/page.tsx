@@ -66,6 +66,13 @@ const paths = [
     title: "출처",
     text: "삼국사기, 삼국유사, 고려사, 조선왕조실록. 이 사이트가 문장을 지어내지 않는 기준.",
   },
+  {
+    href: "/seoul",
+    index: "09",
+    english: "Seoul Explorer",
+    title: "서울 시내 탐험",
+    text: "궁궐·성문·정동·탑골공원까지 서울 29곳을 사진과 지도로. 조선 왕의 하루, 3·1운동의 날, 대한제국 정동길.",
+  },
 ];
 
 const reading = [
@@ -73,6 +80,7 @@ const reading = [
   { href: "/regions/gyeonggi/hanyang", label: "한양이 도읍이 된 해" },
   { href: "/palaces/gyeongbokgung", label: "경복궁 중심 전각이 선 해" },
   { href: "/gates#sungnyemun", label: "숭례문이 불탄 해와 다시 열린 해" },
+  { href: "/seoul", label: "서울 시내 탐험: 3·1운동의 날을 걸어서 따라가기" },
   { href: "/regions/gyeongsang/gyeongju", label: "경주가 천 년 가까이 수도였던 이유" },
   { href: "/regions/chungcheong/buyeo", label: "백제가 부여에서 끝난 일" },
   { href: "/rulers/sejong", label: "훈민정음은 한글이라는 이름보다 먼저" },
