@@ -35,6 +35,7 @@ export const sisters = [
   { href: "https://viking-stories.vercel.app", label: "바이킹이야기", english: "Vikings" },
   { href: "https://egypt-stories.vercel.app", label: "이집트이야기", english: "Egypt" },
   { href: "https://persia-stories.vercel.app", label: "페르시아이야기", english: "Persia" },
+  { href: "https://nadoo-worldwars.vercel.app", label: "세계대전이야기", english: "World Wars" },
   { href: "https://the-chosen-korean.vercel.app", label: "더 초즌 · 성경", english: "The Chosen · Bible" },
   { href: "https://philosophy-stories.vercel.app", label: "철학이야기", english: "Philosophy" },
   { href: "https://nadoo-world.vercel.app", label: "나두세계", english: "World" },

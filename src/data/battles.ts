@@ -173,6 +173,7 @@ export const battles: Battle[] = [
       { href: "https://nadoo-world.vercel.app/countries/jp", label: "나두세계 · 일본" },
       { href: "https://nadoo-world.vercel.app/countries/cn", label: "나두세계 · 중국" },
       { href: "https://nadoo-timeline.vercel.app", label: "나두연표" },
+      { href: "https://nadoo-worldwars.vercel.app/issues/korea-1945", label: "세계대전이야기 · 광복과 분단의 시작" },
     ],
   },
 ];
