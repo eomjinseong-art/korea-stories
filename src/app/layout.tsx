@@ -25,6 +25,7 @@ const serif = Noto_Serif_KR({
 const title = `${SITE_NAME} · 쉬운 한국 역사`;
 
 export const metadata: Metadata = {
+  verification: { google: "LglMaYLzS6dacAPQ5ZgZdPgzdtfLbp_1Rk5vh3WNPlM" },
   metadataBase: new URL(SITE_URL),
   title: {
     default: title,
