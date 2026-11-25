@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { CoupangCard } from "@/components/CoupangCard";
 import { Crumb } from "@/components/Crumb";
@@ -26,6 +27,7 @@ export default function SeoulPage() {
         <a className={link} href="/palaces">궁궐</a>·<a className={link} href="/gates">사대문</a>, 인물은{" "}
         <a className={link} href="/rulers">왕</a>·<a className={link} href="/defenders">지킨 사람들</a>에 있습니다.
       </p>
+      <NadooAd inline />
       <p className="text-xs text-muted">Explore 29 places of Joseon Hanyang and modern Seoul, with photos and three walking routes.</p>
       <SeoulExplorer pins={SEOUL_PINS} routes={SEOUL_ROUTES} images={SEOUL_IMAGES} eras={SEOUL_ERAS} storyNote={SEOUL_STORY_NOTE} />
       <CoupangCard copy={{ icon: "🏯", ko: "사대문은 밤 10시에 닫혔지만, 로켓배송은 새벽에도 문 앞까지 와요", en: "Seoul's gates shut at curfew. Deliveries still reach your door at dawn." }} />

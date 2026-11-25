@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { CrossSiteSection } from "@/components/CrossSiteSection";
@@ -95,6 +96,7 @@ export default function FamilyTreePage() {
         ))}
       </section>
 
+      <NadooAd inline />
       <section className="mt-12">
         <h2 className="font-serif text-2xl text-ink">읽을 때 구분할 것</h2>
         <ul className="mt-4 space-y-4">

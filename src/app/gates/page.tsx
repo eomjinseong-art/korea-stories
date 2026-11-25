@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { HanyangMap } from "@/components/HanyangMap";
@@ -67,6 +68,7 @@ export default function GatesPage() {
         <Prose paragraphs={virtueNote} />
       </section>
 
+      <NadooAd inline />
       <section className="mt-12" aria-labelledby="great-gates-heading">
         <h2 id="great-gates-heading" className="font-serif text-2xl text-ink">
           사대문

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { cities } from "@/data/cities";
 import { defenders } from "@/data/defenders";
 import { eras } from "@/data/eras";
@@ -166,6 +167,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <NadooAd inline />
       <section className="mt-12" aria-labelledby="menu-heading">
         <h2 id="menu-heading" className="font-serif text-2xl text-ink">
           모든 길

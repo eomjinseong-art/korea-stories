@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { seoulLinksFor } from "@/data/seoul-explorer";
 import { notFound } from "next/navigation";
@@ -83,6 +84,7 @@ export default async function PalacePage({ params }: Props) {
       <Notes notes={palace.events} heading="주요 사건" id="events-heading" />
       <Notes notes={palace.buildings} heading="꼭 볼 건물" id="buildings-heading" />
 
+      <NadooAd inline />
       <section className="mt-10" aria-labelledby="damage-heading">
         <h2 id="damage-heading" className="font-serif text-2xl text-ink">
           훼손과 복원

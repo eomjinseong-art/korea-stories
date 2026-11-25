@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { Elsewhere } from "@/components/Elsewhere";
@@ -20,6 +21,7 @@ export default function ErasPage() {
         연대는 교과서와 삼국사기·고려사·실록에서 널리 쓰는 눈금입니다. 건국 신화의 해는 사실처럼 굵게 쓰지 않습니다.
         북쪽 나라의 영토는 이 글에서 지도로 그리지 않고, 남쪽과 닿는 해만 적습니다.
       </p>
+      <NadooAd inline />
       <div className="mt-10 space-y-12">
         {eras.map((era) => (
           <section key={era.slug} id={era.slug} aria-labelledby={`${era.slug}-heading`} className="scroll-mt-28">

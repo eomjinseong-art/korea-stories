@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { seoulLinksFor } from "@/data/seoul-explorer";
 import { notFound } from "next/navigation";
@@ -51,6 +52,7 @@ export default async function RulerPage({ params }: Props) {
       <p className="mt-3 inline-block rounded-full border border-line bg-card px-3 py-1 text-xs text-terra">
         {ruler.badge}
       </p>
+      <NadooAd inline />
       <p className="mt-4 text-sm leading-7 text-ink">{ruler.lede}</p>
       <div className="mt-6 space-y-3">
         {ruler.body.map((paragraph) => (

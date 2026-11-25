@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BattleMap } from "@/components/BattleMap";
@@ -48,6 +49,7 @@ export default async function BattlePage({ params }: Props) {
       </p>
       <p className="mt-4 text-sm leading-7 text-ink">{battle.lede}</p>
       <DefenderNav />
+      <NadooAd inline />
       <figure className="mt-8">
         <BattleMap slug={battle.slug} />
         <figcaption className="mt-2 text-xs leading-6 text-muted">
