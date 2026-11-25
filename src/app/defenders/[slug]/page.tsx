@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { seoulLinksFor } from "@/data/seoul-explorer";
 import { notFound } from "next/navigation";
@@ -72,6 +73,7 @@ export default async function DefenderPage({ params }: Props) {
       <p className="mt-3 inline-block rounded-full border border-line bg-card px-3 py-1 text-xs text-terra">
         {person.badge}
       </p>
+      <NadooAd inline />
       <p className="mt-4 text-sm leading-7 text-ink">{person.lede}</p>
       <DefenderNav />
       <dl className="mt-8 space-y-6">

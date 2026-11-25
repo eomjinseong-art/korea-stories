@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { DefenderNav } from "@/components/DefenderNav";
@@ -32,6 +33,7 @@ export default function DefenderQuizPage() {
         열 문제입니다. 영화의 장면이 아니라 이 사이트의 글을 기준으로 합니다. 양만춘은 전승이고, 봉오동과 청산리는 다른
         달의 다른 지휘관입니다.
       </p>
+      <NadooAd inline />
       <DefenderNav current="quiz" />
       <DefenderQuiz questions={defenderQuiz} />
     </article>

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Crumb } from "@/components/Crumb";
@@ -76,6 +77,7 @@ export default async function RegionPage({ params }: Props) {
         </div>
       </section>
 
+      <NadooAd inline />
       <section className="mt-10" aria-labelledby="cities-heading">
         <h2 id="cities-heading" className="font-serif text-2xl text-ink">
           주요 도시

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { DefenderNav } from "@/components/DefenderNav";
@@ -29,6 +30,7 @@ export default function BattlesIndexPage() {
       <p className="mt-3 text-sm leading-7 text-muted">
         네 전투만 골랐습니다. 그림은 축척이 없는 모식도입니다. 병력 숫자는 기록마다 달라 여기서 외우지 않습니다.
       </p>
+      <NadooAd inline />
       <DefenderNav />
       <ul className="mt-8 space-y-3">
         {battles.map((battle) => (

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { FilmCards } from "@/components/FilmCards";
@@ -41,6 +42,7 @@ export default function PalacesPage() {
         <HanyangMap />
       </div>
 
+      <NadooAd inline />
       <ul className="mt-8 space-y-3">
         {palaces.map((palace) => (
           <li key={palace.slug}>

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 
@@ -53,6 +54,7 @@ export default function SourcesPage() {
         글은 아래 기록을 참고해 우리말로 다시 쓴 것입니다. 옛 문장이나 현대 연구서의 문장을 그대로 옮기지 않았고,
         없는 인용과 없는 대사를 만들지 않았습니다. 영화 제목은 개봉한 작품만 적습니다.
       </p>
+      <NadooAd inline />
       <div className="mt-8 space-y-6">
         {sources.map((source) => (
           <section key={source.title}>

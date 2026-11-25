@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { PalaceTimeline } from "@/components/PalaceTimeline";
@@ -29,6 +30,7 @@ export default function PalaceTimelinePage() {
       <p className="mt-3 max-w-3xl text-sm leading-7 text-muted">
         다섯 궁을 같은 해에 나란히 봅니다. 전화기는 표를 옆으로 밀면 됩니다. 해 칸은 밀어도 옆에 남습니다.
       </p>
+      <NadooAd inline />
       <div className="mt-4 max-w-3xl space-y-3">
         {timelineNote.map((paragraph) => (
           <p key={paragraph.slice(0, 24)} className="text-sm leading-7 text-ink">

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { FilmCards } from "@/components/FilmCards";
@@ -28,6 +29,7 @@ export default function RulersPage() {
         </a>
         에 따로 두었습니다. 전설은 전설이라고 적습니다.
       </p>
+      <NadooAd inline />
       <div className="mt-10 space-y-12">
         {eraOrder.map((era) => {
           const people = rulersByEra(era.slug);

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { CrossSiteSection } from "@/components/CrossSiteSection";
@@ -122,6 +123,7 @@ export default function DefendersPage() {
         </ul>
       </section>
 
+      <NadooAd inline />
       <section id="films" className="mt-14 scroll-mt-28" aria-labelledby="films-heading">
         <p className="text-[11px] tracking-[0.16em] text-terra">FILM CHECKLIST</p>
         <h2 id="films-heading" className="mt-1 font-serif text-3xl text-ink">

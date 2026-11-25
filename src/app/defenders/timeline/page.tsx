@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { DefenderNav } from "@/components/DefenderNav";
@@ -31,6 +32,7 @@ export default function DefenderTimelinePage() {
         시대 순입니다. 같은 시대 안에서는 대표적인 해의 앞뒤입니다. 태어난 해와 싸우는 해가 다를 때는 싸운 해를
         앞세웁니다. 전승은 각 사람 페이지에 적습니다.
       </p>
+      <NadooAd inline />
       <DefenderNav current="timeline" />
       <div className="mt-10 space-y-12">
         {defenderEras.map((era) => {

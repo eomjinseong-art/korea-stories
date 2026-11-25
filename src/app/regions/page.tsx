@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Crumb } from "@/components/Crumb";
 import { regions } from "@/data/regions";
@@ -19,6 +20,7 @@ export default function RegionsPage() {
         지도의 여섯 칸입니다. 경기도에는 한양·인천·수원을 두고, 충청은 충북·충남·대전·세종을, 전라는 전북·전남·광주를,
         경상은 경북·경남·부산·대구·울산을 한 도로 모았습니다. 제주만 섬이라 따로 가볍게 둡니다.
       </p>
+      <NadooAd inline />
       <ul className="mt-8 grid gap-4 sm:grid-cols-2">
         {regions.map((region) => (
           <li key={region.slug}>
